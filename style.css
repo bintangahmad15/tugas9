@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    font-family: 'Segoe UI', sans-serif;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .hero {
+    position: relative;
+    background: url('background.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    color: white;
+    padding: 2rem;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 30, 100, 0.65);
+    z-index: 1;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+  
+  .highlight {
+    color: #94fddf;
+  }
+  
+  .highlight-box {
+    background-color: #c5ffdd;
+    color: #0a2f28;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+  }
+  
+  .subtitle {
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+    border-top: 1px solid #87fbe2;
+    padding-top: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2.2rem;
+    }
+  
+    .subtitle {
+      font-size: 1rem;
+    }
+  }
+  
